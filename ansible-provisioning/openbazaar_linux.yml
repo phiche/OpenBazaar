@@ -82,7 +82,7 @@
      pip: executable="{{openbazaar_python_venv}}"/bin/pip requirements={{openbazaar_toplevel_dest}}/OpenBazaar/test_requirements.txt
      when: do_test 
 
-   - name: Stop Open Bazaar daemon (if it's not running, nothing will happen)
+   - name: Stop Open Bazaar daemon (if its not running, nothing will happen)
      action: > 
       command sh -c "cd {{openbazaar_toplevel_dest}}/OpenBazaar/; ./openbazaar stop" 
 
